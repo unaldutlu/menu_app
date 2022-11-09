@@ -5,11 +5,26 @@
 }
 
 
-/* .navmenu {
-  text-decoration-style: none;
-}
-
-.navmenu>li {
+.navmenu ul>li {
+  font-size: 0.6rem;
   margin-right: 1rem;
   font-weight: 700;
-} */
+  list-style-type: none;
+}
+
+.f-hover {
+  text-decoration: none;
+}
+
+.f-hover:hover {
+  text-decoration: underline;
+}
+
+#liveToastBtn {
+  border: none;
+}
+
+.toast-container {
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
