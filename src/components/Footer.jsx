@@ -32,11 +32,8 @@ function Footer() {
             <a className='mx-4 text-decoration-none fst-italic text-muted'>
               Privacy Policy
             </a>
-            <a
-              href='#'
-              className='fhover fst-italic text-decoration-none'
-            >
-              Home page <i class="bi bi-arrow-up-circle-fill"></i>
+            <a href='#' className='fhover fst-italic text-decoration-none'>
+              Home page <i className='bi bi-arrow-up-circle-fill'></i>
             </a>
           </div>
         </div>

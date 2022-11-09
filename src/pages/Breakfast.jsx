@@ -1,35 +1,34 @@
 import React from "react";
-import data from "../data/data";
-import { Container, Col, Row } from "react-bootstrap";
 
-function Breakfast() {
+function Breakfast({ filter }) {
   return (
-    <section>
-      <Container>
-        <div className='text-center mb-5'>
-          <h2 className='link_heading text-uppercase fs-1 fw-bold'>
-            Breakfast
-          </h2>
-          <h3 className='heading_sub text-muted fs-6 fst-italic mt-3 fw-bold'>
-            Enjoy Your Meal!
-          </h3>
-        </div>
-        {data.map((data, index) => (
-          <Row key={index} className="bg-dark">
-            <Col lg={6} className='bg-light p-5'>
-              <div>
-                <img className="img-fluid" src={data.url} alt=''/>
+    <div>
+      <div className='text-center mb-5'>
+        <h2 className='link_heading text-uppercase fs-1 fw-bold'>Breakfast</h2>
+        <h3 className='heading_sub text-muted fs-6 fst-italic mt-3 fw-bold'>
+          Enjoy Your Meal!
+        </h3>
+      </div>
+      <div className='main'>
+        {filter.map((data, index) => (
+          <div key={index} className='menu'>
+            <div className='bg-success rounded-5'>
+              <div className='image p-2'>
+                <img className='img-fluid' src={data.url} alt='' />
               </div>
               <div>
-                <p className="fw-bolder">{data.name}</p>
-                <p><sup>$</sup>{data.price}</p>
+                <p className='fw-bolder'>{data.name}</p>
+                <p>
+                  <sup>$</sup>
+                  {data.price}
+                </p>
               </div>
-              <div className='title fst-italic'>{data.title}</div>
-            </Col>
-          </Row>
+              <div className='title fst-italic pb-2'>{data.title}</div>
+            </div>
+          </div>
         ))}
-      </Container>
-    </section>
+      </div>
+    </div>
   );
 }
 
