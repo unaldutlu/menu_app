@@ -5,22 +5,19 @@ import Breakfast from "../pages/Breakfast";
 import Lunch from "../pages/Lunch";
 import Dinner from "../pages/Dinner";
 import Coffee from "../pages/Coffee";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function MenuRouter() {
+function MenuRouter({ data }) {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path='/*' element={<Layout />}>
-          <Route path='' element={<Breakfast />} />
-          <Route path='lunch' element={<Lunch />} />
-          <Route path='dinner' element={<Dinner />} />
-          <Route path='coffee' element={<Coffee />} />
+        <Route path='/*' element={<Layout/>}>
+          <Route path='' element={<Breakfast data={data} />} />
+          <Route path='lunch' element={<Lunch data={data} />} />
+          <Route path='dinner' element={<Dinner data={data} />} />
+          <Route path='coffee' element={<Coffee data={data} />} />
         </Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
