@@ -8,19 +8,54 @@
   background-color: #212529;
 }
 
+.header h1 {
+  letter-spacing: .3rem;
+  font-weight: 700;
+}
+
 .navmenu {
   background-color: #212529;
 }
 
 .navmenu ul>li {
+  letter-spacing: 0.06rem;
   font-size: 0.7rem;
   margin-right: 1rem;
   font-weight: 700;
   list-style-type: none;
 }
 
+.navmenu ul>li:hover {
+  transform: scale(120%);
+}
+
+.main {
+  margin: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu {
+  width: 40%;
+  display: flex;
+  margin: 2rem;
+}
+.frame{
+  width: 15rem;
+}
+
+.image {
+  overflow: hidden;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
-  width: 70%;
+  width: 50%;
   object-fit: cover;
   transition: all 1s ease;
 }
