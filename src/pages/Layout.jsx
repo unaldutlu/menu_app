@@ -1,18 +1,23 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Layout() {
   return (
     <div>
-      <nav className='navmenu bg-dark'>
-        <h4 className='text-danger pb-2 text-decoration-underline fst-italic'>
+      <div className='header p-4'>
+        <h1 className='text-info fst-italic fw-bold mb-0'>
+          Welcome To Our Cafe
+        </h1>
+      </div>
+      <nav className='navmenu'>
+        <h4 className='text-danger pb-2 text-decoration-underline fst-italic pb-4'>
           Our Menu
         </h4>
         <ul className='d-flex justify-content-around pt-2'>
           <li>
             <NavLink
               style={({ isActive }) => ({
-                color: isActive ? "blue" : "burlywood",
+                color: isActive ? "yellow" : "burlywood",
               })}
               end
               to='/'
@@ -23,7 +28,7 @@ function Layout() {
           <li>
             <NavLink
               style={({ isActive }) => ({
-                color: isActive ? "blue" : "burlywood",
+                color: isActive ? "yellow" : "burlywood",
               })}
               to='lunch'
             >
@@ -33,7 +38,7 @@ function Layout() {
           <li>
             <NavLink
               style={({ isActive }) => ({
-                color: isActive ? "blue" : "burlywood",
+                color: isActive ? "yellow" : "burlywood",
               })}
               to='dinner'
             >
@@ -43,7 +48,7 @@ function Layout() {
           <li>
             <NavLink
               style={({ isActive }) => ({
-                color: isActive ? "blue" : "burlywood",
+                color: isActive ? "yellow" : "burlywood",
               })}
               to='coffee'
             >
@@ -53,7 +58,6 @@ function Layout() {
         </ul>
         <hr />
       </nav>
-      <Outlet />
     </div>
   );
 }

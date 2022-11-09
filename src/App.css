@@ -4,27 +4,27 @@
   box-sizing: border-box;
 }
 
+.header {
+  background-color: #212529;
+}
+
+.navmenu {
+  background-color: #212529;
+}
 
 .navmenu ul>li {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin-right: 1rem;
   font-weight: 700;
   list-style-type: none;
 }
 
-.f-hover {
-  text-decoration: none;
+img {
+  width: 70%;
+  object-fit: cover;
+  transition: all 1s ease;
 }
 
-.f-hover:hover {
-  text-decoration: underline;
-}
-
-#liveToastBtn {
-  border: none;
-}
-
-.toast-container {
-  padding-right: 1rem;
-  padding-bottom: 2rem;
+img:hover {
+  transform: scale(1.05);
 }

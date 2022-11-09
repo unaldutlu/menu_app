@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className='bg-light '>
+    <footer className='bg-dark mt-3'>
       <div className='container'>
         <div className='row d-flex align-items-baseline'>
-          <div className='col-md-4 text-muted text-center text-lg-start py-2 py-md-3'>
+          <div className='col-md-4 text-muted text-center text-lg-start py-1 py-md-3'>
             Copyright &copy; New Design 2022
           </div>
           <div className='col-md-4 text-center py-2 py-md-3'>
@@ -21,20 +21,22 @@ function Footer() {
             >
               <i className='bi bi-github'></i>
             </a>
-            <a href='https://mail.google.com/mail/u/0/?hl=tr&tf=cm&fs=1&to=unaldutlu@gmail.com' className='mx-2 btn btn-danger rounded-4'>
+            <a
+              href='https://mail.google.com/mail/u/0/?hl=tr&tf=cm&fs=1&to=unaldutlu@gmail.com'
+              className='mx-2 btn btn-danger rounded-4'
+            >
               <i className='bi bi-envelope-fill'></i>
             </a>
           </div>
           <div className='col-md-4 py-2 py-md-3 text-center text-lg-end'>
-            <a
-              href='#liveToastBtn'
-              className='mx-2 f-hover fst-italic'
-              id='liveToastBtn'
-            >
-              Gizlilik Politikası
+            <a className='mx-4 text-decoration-none fst-italic text-muted'>
+              Privacy Policy
             </a>
-            <a href='#' className='fst-italic f-hover'>
-              Ana Sayfa
+            <a
+              href='#'
+              className='fhover fst-italic text-decoration-none'
+            >
+              Home page <i class="bi bi-arrow-up-circle-fill"></i>
             </a>
           </div>
         </div>
