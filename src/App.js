@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import MenuRouter from "./router/MenuRouter";
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
+    <div className='text-center'>
+      <MenuRouter />
     </div>
   );
 }
