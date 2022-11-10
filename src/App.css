@@ -61,36 +61,81 @@ img {
 img:hover {
   transform: scale(1.05);
 }
-@media screen and (min-width:1250px){
+
+.style {
+  color: bisque;
+}
+
+.blink {
+  animation: blinker 3s linear infinite;
+  color: bisque;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (min-width:1250px) {
   .image {
     height: 18rem;
   }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
   .menu {
     width: 80%;
   }
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
   .main {
     margin: 1rem;
   }
+
   .menu {
     width: 110%;
   }
 }
 
-@media screen and (max-width:290px){
+@media screen and (max-width:290px) {
   .main {
     margin: 0;
   }
+
   .menu {
     width: 110%;
   }
+
   .image {
     height: 10rem;
   }
 }
-

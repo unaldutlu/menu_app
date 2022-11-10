@@ -4,7 +4,9 @@ function Breakfast({ filter }) {
   return (
     <div>
       <div className='text-center mb-5'>
-        <h2 className='link_heading text-uppercase fs-1 fw-bold'>Breakfast</h2>
+        <h2 className='link_heading text-uppercase fs-1 fw-bold shake'>
+          Breakfast
+        </h2>
         <h3 className='heading_sub text-muted fs-6 fst-italic mt-3 fw-bold'>
           Enjoy Your Meal!
         </h3>
@@ -17,13 +19,13 @@ function Breakfast({ filter }) {
                 <img className='img-fluid' src={data.url} alt='' />
               </div>
               <div>
-                <p className='fw-bolder'>{data.name}</p>
-                <p>
+                <p className='fw-bolder style'>{data.name}</p>
+                <p className='blink'>
                   <sup>$</sup>
                   {data.price}
                 </p>
               </div>
-              <div className='title fst-italic pb-2'>{data.title}</div>
+              <div className='title fst-italic pb-2 style'>{data.title}</div>
             </div>
           </div>
         ))}
