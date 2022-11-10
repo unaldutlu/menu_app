@@ -142,6 +142,22 @@ const menu = [
     category: "coffee",
   },
   {
+    name: "Espresso",
+    title:
+    "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
+    price: 8.99,
+    url: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg",
+    category: "coffee",
+  },
+  {
+    name: "Mocha",
+    title:
+    "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
+    price: 9.99,
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mocaccino-Coffee.jpg",
+    category: "coffee",
+  },
+  {
     name: "Latte",
     title:
       "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
@@ -155,22 +171,6 @@ const menu = [
       "With a similar flavor to black coffee, the americano consists of an espresso shot diluted in hot water.",
     price: 7.99,
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg/1280px-Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg",
-    category: "coffee",
-  },
-  {
-    name: "Espresso",
-    title:
-      "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
-    price: 8.99,
-    url: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg",
-    category: "coffee",
-  },
-  {
-    name: "Mocha",
-    title:
-      "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
-    price: 9.99,
-    url: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mocaccino-Coffee.jpg",
     category: "coffee",
   },
 ];
