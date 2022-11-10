@@ -4,7 +4,7 @@ import Breakfast from "../pages/Breakfast";
 import Lunch from "../pages/Lunch";
 import Dinner from "../pages/Dinner";
 import Coffee from "../pages/Coffee";
-import Layout from "../pages/Layout";
+import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import data from "../data/data";
 
