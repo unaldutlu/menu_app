@@ -29,10 +29,10 @@ function Footer() {
             </a>
           </div>
           <div className='col-md-4 py-2 py-md-3 text-center text-lg-end'>
-            <a className='mx-4 text-decoration-none fst-italic text-muted'>
+            <a className='me-3 text-decoration-none fst-italic text-muted'>
               Privacy Policy
             </a>
-            <a href='#' className='fhover fst-italic text-decoration-none'>
+            <a href='#' className='fst-italic text-decoration-none'>
               Home page <i className='bi bi-arrow-up-circle-fill'></i>
             </a>
           </div>
