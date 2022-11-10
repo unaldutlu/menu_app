@@ -16,7 +16,7 @@ function Coffee({ filterCoffee }) {
           <div key={index} className='menu'>
             <div className='bg-success rounded-5'>
               <div className='image p-2'>
-                <img className='img-fluid' src={data.url} alt='' />
+                <img className='img-fluid rounded-4' src={data.url} alt='' />
               </div>
               <div>
                 <p className='fw-bolder style'>{data.name}</p>

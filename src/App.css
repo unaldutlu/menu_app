@@ -148,7 +148,7 @@ h1::before {
 
 @media screen and (min-width:1250px) {
   .image {
-    height: 18rem;
+    height: 25rem;
   }
 }
 
