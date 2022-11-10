@@ -23,7 +23,7 @@ function Coffee({ filterCoffee }) {
                   {data.price}
                 </p>
               </div>
-              <div className='title fst-italic pb-2'>{data.title}</div>
+              <div className='title fst-italic p-2'>{data.title}</div>
             </div>
           </div>
         ))}
