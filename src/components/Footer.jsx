@@ -29,7 +29,7 @@ function Footer() {
             </a>
           </div>
           <div className='col-md-4 py-2 py-md-3 text-center text-md-start text-lg-end'>
-            <a className='me-3 text-decoration-none fst-italic text-muted'>
+            <a className='me-3 me-md-1 me-lg-3 text-decoration-none fst-italic text-muted'>
               Privacy Policy
             </a>
             <a href='#' className='fst-italic text-decoration-none'>
