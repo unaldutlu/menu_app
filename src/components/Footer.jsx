@@ -28,7 +28,7 @@ function Footer() {
               <i className='bi bi-envelope-fill'></i>
             </a>
           </div>
-          <div className='col-md-4 py-2 py-md-3 text-center text-lg-end'>
+          <div className='col-md-4 py-2 py-md-3 text-center text-md-start text-lg-end'>
             <a className='me-3 text-decoration-none fst-italic text-muted'>
               Privacy Policy
             </a>
